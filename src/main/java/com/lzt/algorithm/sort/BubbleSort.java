@@ -1,11 +1,11 @@
-package com.lzt.algorithm.sorting;
+package com.lzt.algorithm.sort;
 
 import java.util.Arrays;
 
 /**
  * @author lzt
  */
-public class Bubble {
+public class BubbleSort {
 
     public static int[] sort(int[] nums) {
         if (nums == null || nums.length < 2) {

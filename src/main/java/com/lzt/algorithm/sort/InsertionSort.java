@@ -1,8 +1,8 @@
-package com.lzt.algorithm.sorting;
+package com.lzt.algorithm.sort;
 
 import java.util.Arrays;
 
-public class Insertion {
+public class InsertionSort {
 
     public static int[] sort(int[] nums) {
         if (nums == null || nums.length < 2) {
