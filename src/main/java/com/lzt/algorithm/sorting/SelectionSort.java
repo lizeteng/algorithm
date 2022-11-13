@@ -1,4 +1,4 @@
-package com.lzt.algorithm.sort;
+package com.lzt.algorithm.sorting;
 
 import java.util.Arrays;
 
