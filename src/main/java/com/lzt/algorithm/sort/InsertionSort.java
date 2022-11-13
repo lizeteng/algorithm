@@ -14,8 +14,8 @@ public class InsertionSort {
 
         for (int i = 1; i < nums.length; i++) {
             int num = nums[i];
-            int j = i - 1;
 
+            int j = i - 1;
             for (; j >= 0; j--) {
                 if (nums[j] > num) {
                     nums[j + 1] = nums[j];
