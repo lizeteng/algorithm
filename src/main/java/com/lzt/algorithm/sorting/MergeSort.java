@@ -2,6 +2,9 @@ package com.lzt.algorithm.sorting;
 
 import java.util.Arrays;
 
+/**
+ * @author lzt
+ */
 public class MergeSort {
 
     public static int[] sort(int[] nums) {
@@ -24,17 +27,17 @@ public class MergeSort {
         sort(nums, low, mid);
         sort(nums, mid + 1, high);
 
-        int[] newNums = new int[high - low + 1];
+        int[] temp = new int[high - low + 1];
 
         int i = low, j = mid + 1, k = 0;
         while (i <= mid && j <= high) {
             if (nums[i] > nums[j]) {
-                newNums[k++] = nums[j++];
+                temp[k++] = nums[j++];
 
                 continue;
             }
 
-            newNums[k++] = nums[i++];
+            temp[k++] = nums[i++];
         }
 
         int l = i, m = mid;
@@ -44,12 +47,12 @@ public class MergeSort {
         }
 
         while (l <= m) {
-            newNums[k++] = nums[l++];
+            temp[k++] = nums[l++];
         }
 
         int n = 0;
         while (low <= high) {
-            nums[low++] = newNums[n++];
+            nums[low++] = temp[n++];
         }
     }
 
