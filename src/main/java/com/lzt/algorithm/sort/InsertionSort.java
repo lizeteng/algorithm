@@ -2,6 +2,9 @@ package com.lzt.algorithm.sort;
 
 import java.util.Arrays;
 
+/**
+ * @author lzt
+ */
 public class InsertionSort {
 
     public static int[] sort(int[] nums) {
