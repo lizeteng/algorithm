@@ -3,7 +3,7 @@ package com.lzt.algorithm.binarysearch;
 /**
  * @author lzt
  */
-public class BinarySearchLastPriority {
+public class LastPriorityBinarySearch {
 
     public static int search(int[] nums, int target) {
         if (nums == null || nums.length < 1) {
